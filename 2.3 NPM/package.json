@@ -1,0 +1,12 @@
+{
+  "name": "learning-npm",
+  "version": "1.0.0",
+  "description": "I'm Learning about NPM",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cyrus",
+  "license": "ISC"
+}
