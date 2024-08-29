@@ -1,0 +1,147 @@
+ <!--DOM = ANOTHER BUILT IN OBJECT-->
+<!--Document object-->
+
+<!DOCTYPE html>
+<html>
+<title> All together </title>
+
+<head>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            
+        }   
+
+        
+
+        .subscribe-btn{
+        border: none;
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 30px;
+
+        }
+
+        .is-subscribed{
+            background-color: rgb(240, 240, 240);
+            color: black;
+        }
+
+        .cost-input{
+            font-size: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .calculate-btn{
+            padding: 12px 18px;
+            color: white;
+            background-color:  rgb(3, 148, 3);
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+    </style>
+
+
+    <body>
+
+        
+        <p>Youtube Subscribe Button</p>
+        <button class="subscribe-btn subscribe-btn" onclick="
+        
+       subscribe();
+
+        ">
+        Subscribe
+        </button>
+
+      
+
+        <p class="rockPaper">Amazon Shipping Calculator</p>
+        <p>Orders under  $40 - $10 shipping</p>
+        <p>Orders over $40 - FREE SHIPPING</p>
+        <input placeholder="Cost of Order" class="js-cost-input cost-input" onkeydown=" 
+
+        keyDownEnter(event);
+                            ">
+        <button onclick="calculateTotal();"
+        class="calculate-btn">Calculate</button>
+
+        <p class="js-total-cost "></p>
+        <style>
+
+            .rockPaper{
+                margin-top: 40px;
+            }
+
+        </style>
+
+
+        <script>
+
+           -
+
+            function keyDownEnter(event){
+              console.log(event.key);
+                                
+            if( event.key === 'Enter'){
+                calculateTotal();
+            }
+          }
+
+
+            function subscribe(){
+
+            const buttonElement = document.querySelector('.subscribe-btn');
+                
+              if(buttonElement.innerText === 'Subscribe'){
+                
+                buttonElement.innerHTML = 'Subscribed';
+                //GIVES US CONTROL OF CLASS ATTRIBUE
+                //CLASS LIST IS AN OBJECT 
+                //EVERY TIME THE BUTTON IS CLICKED IT ADS CLASS
+                //NOw we can style it in CSS
+                buttonElement.classList.add
+                ('is-subscribed');
+                } else {
+                buttonElement.innerHTML = 'Subrscribe';
+                //DOES THE OPPOSITE TURNS IT BACK TO NORMAL
+                buttonElement.classList.remove('is-subscribed');
+                }
+
+            }
+           
+            function calculateTotal(){
+                const inputElement = document.querySelector(`.js-cost-input`);
+                let cost = Number(inputElement.value); // turns the value into
+                console.log(typeof cost);
+
+                if(cost < 40){
+                    cost = cost + 10;
+                    console.log(cost);
+                } 
+
+                document.querySelector('.js-total-cost')
+                    .innerHTML = `${cost}`;
+                 //to get the input in the box
+                
+            }
+           
+            
+        </script>
+
+    </body>
+</head>
+
+</html>

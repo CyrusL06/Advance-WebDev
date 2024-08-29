@@ -1,0 +1,54 @@
+ <!--DOM = ANOTHER BUILT IN OBJECT-->
+<!--Document object-->
+
+<!DOCTYPE html>
+<html>
+<title> DOM </title>
+
+<head>
+
+    <body>
+
+        <button>HELLO</button>
+        <button class="js-button">GAY</button>
+        <script>
+
+           //document.querySelector() lets us get any element from the page
+           // and puts it inside JavaScript.
+           // Every 
+           console.log(document.querySelector('button').innerHTML);
+
+           document.querySelector('button').innerHTML = 'Changed';
+
+           const buttonElement = document.querySelector('.js-button');
+
+           //DOM COMBINES JS AND HTML together it gives JS full control of the webpage
+           console.log(buttonElement);
+
+            /*
+            console.log(document.title);
+            document.title = 'Changed';
+            
+            
+            //DOM combines JAVAscript and HTML TOgether
+            console.log(document.body);
+            console.log(typeof document.body);
+
+            //shows the html 
+            console.log(document.body.innerHTML); 
+            document.body.innerHTML = '<button>Good Job</button>';
+
+
+            /*
+           document.body.innerHTML = 'hello';
+           document.title = ' Good JOb';
+           */
+
+           
+     
+        </script>
+
+    </body>
+</head>
+
+</html>

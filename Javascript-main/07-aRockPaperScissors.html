@@ -1,0 +1,129 @@
+<!--ROCK PAPER SCISSORS GAME-->
+
+
+<!DOCTYPE html>
+<html>
+<title> Rock Paper SCissors </title>
+
+<head>
+
+    <body>
+        <p>Rock Paper Scissors</p>
+        <button onclick="
+            
+            
+            playGame('rock');
+
+            ">Rock</button>
+
+        <button onclick="
+        
+            playGame('paper');
+        
+    
+        
+        ">Paper</button>
+
+        <button onclick="
+        
+        playGame('scissors');
+           
+        
+        ">Scissors</button>
+
+   
+        
+
+        <script>
+            // USED FUNCTION
+            //GLOBAL VARIABLES
+            //RETURN STATEMENT TO RETURN THE VALUE 
+            //BEST PRACTICE TO KEEP VARIABLE INSIDE THE SCOPE
+            
+            function playGame(playerMove){
+
+             const computerMove = (pickComputerMove()); 
+            
+            let result = '';
+
+
+            if(playerMove === 'scissors'){
+
+                    if (computerMove === 'scissors'){
+                result = 'Tie';
+                } else if (computerMove === 'paper') {
+                    result = 'You Win';
+                } else if (computerMove === 'rock') {
+                    result = 'You Lose';
+                }
+
+                alert(`You picked scissors. Computer picked ${computerMove}. ${result}`);
+                }
+
+                else if (playerMove === 'paper'){
+
+                const computerMove = (pickComputerMove());
+                pickComputerMove();
+                let result = '';
+
+
+
+                if (computerMove === 'paper'){
+                result = 'Tie';
+                } else if (computerMove === 'scissors') {
+                    result = 'You lose';
+                } else if (computerMove === 'rock') {
+                    result = 'You Win';
+                }
+
+                alert(`You picked paper. Computer picked ${computerMove}. ${result}`);
+
+                } else if (playerMove === 'rock'){
+
+                    const computerMove = (pickComputerMove());
+                pickComputerMove();
+                let result = '';
+
+
+
+
+                if (computerMove === 'rock'){
+                result = 'Tie';
+                } else if (computerMove === 'paper') {
+                    result = 'You lose';
+                } else if (computerMove === 'scissors') {
+                    result = 'You Win';
+                }
+
+                alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
+                }
+            } 
+         //-------------------------
+
+
+
+            function pickComputerMove(){
+
+         const randomNumber = Math.random();
+
+           let computerMove = '';
+ 
+            if(randomNumber >= 0 && randomNumber < 1/3){
+                 computerMove = 'rock';
+            } else if (randomNumber >= 1/3 && randomNumber < 2/3){
+                 computerMove = 'paper';
+            } else if(randomNumber < 1){
+                 computerMove = 'scissors';
+            }
+
+            
+            return computerMove; //returns the number allows it inside the scope
+        
+            }
+            
+
+        </script>
+    </body>
+</head>
+
+</html>
