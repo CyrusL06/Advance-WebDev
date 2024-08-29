@@ -1,0 +1,92 @@
+<!--ARRAYS REPRESENT LIST OF VALUES-->
+<!--LOOPS LETS US RUN THE CODE OVER AND OVER -->
+
+<!DOCTYPE html>
+<html>
+    <title>Arrays and Loops</title>
+    <Style>
+
+    </Style>
+    <head>
+        <body>
+            
+
+            <script>
+
+                //ARRAY EXAMPLE
+             const myArray = [10, 20, 30];
+             console.log(myArray);
+                //TO GET SPECIFIC VALUE IN ARRAY
+                // 0 = first value in the array
+                myArray[0]
+                console.log(myArray[0]);
+                //CAN access in the value and CHANGE it
+                myArray[1] = 99;
+                console.log(myArray[1]);
+
+                //CAN HAVE NUMBER, STRING, FUNCTION, and even ARRAY
+                 [1, 'hello', true, {name: 'socks'}, [1,2]]
+                console.log(typeof [1,2]);
+              
+                //CHECK THE LENGTH
+                console.log(myArray.length);
+
+                //.push() add value at the end of array
+                myArray.push(100);
+                console.log(myArray);
+
+                //.splice() removes value in array
+      // requires 1. Index we want to remove 
+                //2. Numbers of values to remove
+                myArray.splice(0, 1);
+                console.log(myArray);
+                
+//LOOOPS-------------------------------------------------------------------------
+
+                console.log('LOOP TIME');
+
+                //loop variable
+                let i = 1;
+                //if the result is true the loop will keep going
+                //once it is false it will do it over
+                // code inside () = loop condition
+
+                while (i <= 5) {
+                    console.log(i);
+                    //inscrement step = loops that make it stop
+                    i++;
+                }
+                //iterarion is how many time its executed
+                //it got scope 
+                
+
+                //TWO TYPES OF LOOP 
+                //2. FOR LOOP:
+
+
+                // inside () you need to type in loop variable 
+                //THEN the condition
+                //THEN increment
+
+                for(let i = 1; i <= 5; i++) {
+                    console.log(i);
+                }
+
+                //FOR loop is just shorter and works the same way 
+
+                //WHILE LOOP vs FOR LOOP
+                // Standard === for
+                //Non-standard loop === while EXP:
+
+                let randomNumber = 0;
+
+                while() {}
+
+
+
+            </script>
+
+
+        </body>
+    </head>
+</html>
