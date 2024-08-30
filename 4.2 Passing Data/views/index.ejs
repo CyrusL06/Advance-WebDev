@@ -1,0 +1,30 @@
+<!-- Passind Data on EJS to SERVER -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Letters</title>
+</head>
+
+<body>
+  <!-- Need to add "locals." then it would be error -->
+  <!-- Because it needs to check in locals if it exist -->
+  <!-- Then CONTINUE -->
+  <% if (locals.numOfLetters) { %>
+    <h1> There are <%= numOfLetters %> in your name</h1>
+  <% } else { %>
+    <h1>Write your name below</h1>
+    <% }%> 
+  <!-- Write your code here -->
+   
+  <form action="/submit" method="POST">
+    <input type="text" name="fName" placeholder="First name">
+    <input type="text" name="lName" placeholder="Last name">
+    <input type="submit" value="OK">
+  </form>
+</body>
+
+</html>
