@@ -26,4 +26,27 @@
 
 
 
+    
+                                          Formatting API Requests
+                                    What we've seen so far is this format....
+
+
+
+                                YOUR FRONTEND              YOUR SERVER
+                                              ==>REQUEST==> 
+                                             <==RESPONSE<==  
+                                               PRIVATE API
+                              
+                                                
+                              But what you wanna do is too get somebody elses API
+
+                       YOUR FRONTEND             YOUR SERVER              SOMEONES SERVER
+                                 ==>REQUEST==>               ==>REQUEST==>    
+                                 <==RESPONSE<==              <==RESPONSE<==  
+                                   PRIVATE API                 PUBLIC API
+
+
+
+
+
                         
