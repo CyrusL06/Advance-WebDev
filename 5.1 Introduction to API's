@@ -1,4 +1,4 @@
-                                  Applicaion Programming Interfaces(APIs)
+                                   Applicaion Programming Interfaces(APIs)
                                      How Computer interact each other
                               
                                     In ordER TO BRIGE Differen software
@@ -26,7 +26,7 @@
 
 
 
-    
+                            
                                           Formatting API Requests
                                     What we've seen so far is this format....
 
@@ -46,6 +46,21 @@
                                    PRIVATE API                 PUBLIC API
 
 
+
+                                  
+
+                                              Query Parameters 
+                                            Filtering & Searching
+                            https://bored-api.appbrewery.com/endpoint?query=value
+
+                                          Multiple Query Parameters 
+                        https://bored-api.appbrewery.com/endpoint?query=value&query2=value
+
+                                               Path Parameters 
+                                   To find specific a resource in the API
+                             https://bored-api.appbrewery.com/endpoint/{parameter}
+  
+                                            
 
 
 
