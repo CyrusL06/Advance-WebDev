@@ -1,1 +1,29 @@
+                                  Applicaion Programming Interfaces(APIs)
+                                     How Computer interact each other
+                              
+                                    In ordER TO BRIGE Differen software
+                                                |       |
+                                PROGRAM A       |       |        PROGRAM B
+                               (JAPANESE)       |  API  |        (KOREAN)  
+                                                |       |
+                                                |       | 
 
+
+      For example YOUR Website needed Weather Data but you dont know what language their database is......
+                                 THIS WHEN API ALLOW YOU TO USE THE DATA
+
+
+                                PROGRAM A       |       |        PROGRAM B
+                                (Website)   <== |  API  |  <==  (Wearher Data)  
+                                                |       |
+                                                |       | 
+
+
+                                PROGRAM A       |       |        PROGRAM B
+                                (Website)   <== |  API  |  <==  (MailChimp)  
+                                newsletter  ==> |       |  ==> Email database
+                                                |       | 
+
+
+
+                        
