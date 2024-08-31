@@ -16,6 +16,7 @@ function logger(req, res, next) {
   next();
 }
 
+//Function shorcut and clean
 app.use(logger);
 
 app.get("/", (req, res) => {
