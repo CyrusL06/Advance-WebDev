@@ -9,6 +9,7 @@ const port = 3000;
 //function that take
              //req  response next                 
 function logger(req, res, next) {
+                           //displaying the request
   console.log("Request Method: ", req.method);
   console.log("Request URL: ", req.url);
  // continue to next thing(middleware)
