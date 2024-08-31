@@ -6,10 +6,13 @@ import express from "express";
 const app = express();
 const port = 3000;
 
+//function that take
+             //req  response next                 
 function logger(req, res, next) {
   console.log("Request Method: ", req.method);
   console.log("Request URL: ", req.url);
- // continue to next thing
+ // continue to next thing(middleware)
+// order is important!
   next();
 }
 
