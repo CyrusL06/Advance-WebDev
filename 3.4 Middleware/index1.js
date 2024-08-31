@@ -26,17 +26,20 @@ import bodyParser from "body-parser";
 //These 3 lines code are important to not wright the whole fullpath
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+// making it short
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 const port = 3000;
 
 //FOR MIDDLEWARE
-        //PATH    //DATA-PARSED   //DETERMINES WHAT DATA 
+// BodyParser (which data to pass) 
+//passing info to come in
+        //PATH    //DATA-PARSED  //DETERMINES WHAT DATA 
 app.use(bodyParser.urlencoded({extended: true}));
 
 
-
+// Just meant to send back resource NOT COMING IN
 app.get("/", (req, res) => {
   //res.sendFile requires path to send 
   //to get the full path when my server is uploaded in order
@@ -45,7 +48,7 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
 
-         
+//         
 app.post("/submit", (req,res) => {
   console.log(req.body);
 })
