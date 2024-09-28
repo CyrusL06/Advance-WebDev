@@ -47,8 +47,8 @@
 
 
 
-                                  
-
+                                  #Structuring API requests
+  
                                               Query Parameters 
                                             Filtering & Searching
                             https://bored-api.appbrewery.com/endpoint?query=value
