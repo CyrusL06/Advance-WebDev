@@ -1,0 +1,24 @@
+What if you wanna create an app where server is needed to make API request?
+
+this is the common needs
+
+so we use native node and axios
+
+using axios is simplified for using req into one line
+
+Using Axios:
+
+
+
+import axios "axios;"
+ 
+app.get("/", async (req, res) => {
+  try {
+    const response await axios.get("url.com")
+    res.render("index.ejs", {activity: response-data})
+  } catch {error} {
+    console.log("Failed to make request");
+    res.status(500).send("Failed tp fetch activity, Please Try Again")
+    
+  }
+})
